@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Обо мне!</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: 'Comic Sans MS', cursive, sans-serif;
+		}
+		body {
+			background-color: #f0f8ff ;
+			padding: 20px;
+			margin: 0;
+			color: #333;
+			line-height: 1.6;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: white;
+			padding: 25px;
+			border-radius: 25px;
+			box-shadow: 0 0 20px rgba(0,0,0,0.6);
+
+		}
+		header {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.avatar {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			border: 5px solid #4ecdc4;
+			margin: 0 auto 20px;
+			display: block;
+			background-color: #ffd166;
+
+		}
+		@media(max-width: 600px) {
+			.avatar {
+				width: 150px;
+				height: 150px;
+			};
+		}
+		h1 {
+			color: #ff6b6b;
+			font-size: 2.5em;
+			margin-bottom: 10px;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+		}
+		section {
+			margin-bottom: 30px;
+			padding: 20px;
+			border-radius: 10px;
+			background: #f9f9f9;
+		}
+		h2 {
+			color: #1a936f;
+			border-bottom: 3px dashed #ffd166;
+			padding-bottom: 10px;
+			font-size: 2em;
+		}
+		.hobby ul {
+			list-style-type: '✨ ';
+			padding-left: 25px;
+		}
+		.hobby li {
+			margin-bottom: 10px;
+			font-size: 1.1em;
+		}
+		.social-link {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+		.social-link a {
+			display: inline-block;
+			padding: 12px 25px;
+			background-color: #4ecdc4;
+			color: white;
+			text-decoration: none;
+			border-radius: 50px;
+			font-weight: bold;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+			transition: all 0.3s ease;
+		}
+		.social-link a:hover {
+			background-color: #ff6b6b;
+			transform: translateY(-3px);
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+		}
+		footer {
+			text-align: center;
+			margin-top: 30px;
+			color: #888;
+			font-style: italic;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="avatar.jpg" alt="" class="avatar">
+			<h1>Привет, меня зовут Алексей!</h1>
+		</header>
+
+
+	<section class="about">
+		<h2>Обо мне</h2>
+		<p> Я учусь в ... Живу в городе/поселке... </p>
+	</section>
+
+	<section class="hobby">
+		<h2>Мои увлечения</h2>
+		<ul>
+			<li>Программирование</li>
+			<li>Футбол</li>
+			<li>Путешествия</li>
+		</ul>
+	</section>
+	<section class="social">
+		<h2>Я в соцсетях</h2>
+		<div class="social-link">
+			<a href="#">ВКонтакте</a>
+			<a href="#">Discord</a>
+			<a href="#">Telegram</a>
+		</div>
+	</section>
+	<footer>
+		Создано на первом занятии Web-мастеринг
+	</footer>
+	</div>
+</body>
+</html>
